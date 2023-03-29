@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 
 # Load data from CSV file
-data = pd.read_csv('3.csv', usecols=['sensor_type', 'time', 'distance'])
+data = pd.read_csv('sensor.csv', usecols=['sensor_type', 'time', 'distance'])
 
 # Map sensor_type to numeric values
 data['sensor_type'] = data['sensor_type'].map({'IR': 0, 'Ultrasonic': 1})
