@@ -5,7 +5,6 @@ Servo myservo1;
 Servo myservo2; 
 int pos = 0;    // variable to store the servo position
 char t;
-int j = 0;
 
 void setup() {
   myservo.attach(9);  // attaches the servo on pin 9 to the servo object
@@ -23,13 +22,11 @@ void loop() {
   if (t == 'a') { 
 
       myservo.write(90);              // tell servo to go to position in variable 'pos'
-                   // waits 15 ms for the servo to reach the position
+                   
     }
    else if (t == 'b') {
-// goes from 180 degrees to 0 degrees
-j++;
-      myservo.write(25);              // tell servo to go to position in variable 'pos'
-                    // waits 15 ms for the servo to reach the position
+
+      myservo.write(25);             
   }else if (t == 'c'){
     myservo1.write(25);
   } else if (t == 'd'){
